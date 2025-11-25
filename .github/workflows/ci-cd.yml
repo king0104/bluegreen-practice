@@ -49,7 +49,7 @@ jobs:
             TARGET=blue
             STOP=none
           fi
-
+          
           echo "Deploying to: $TARGET"
           docker compose pull express-healthcheck-$TARGET
           docker compose up -d express-healthcheck-$TARGET
